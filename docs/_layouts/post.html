@@ -2,20 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Home</title>
+    <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
-    <nav>
-  <a href="/">Home</a>
-  <a href="/about.html">About</a>
-  <a href="/post.html">Posts</a>
-</nav>
-
-    <h1>Home</h1>
+    {% include navigation.html %}
+    <h1>{{ page.title }}</h1>
     <section>
-      <h1>hello world!</h1>
-
+      {{ content }}
     </section>
     <footer>
       &copy; to me
