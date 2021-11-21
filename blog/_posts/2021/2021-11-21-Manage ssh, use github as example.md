@@ -8,6 +8,19 @@ tags:
   - git
 ---
 
+# SSH commands
+
+List keys for ssh client
+`ssh-add -l`
+
+Add key for ssh client
+`ssh-add ~/.ssh/robertrino`
+
+Delete key for ssh client
+`ssh-add -d ~/.ssh/robertrino`
+
+---
+
 According to `man ssh`
 > ssh default will use ~/.ssh/id_dsa, ~/.ssh/id_ecdsa, ~/.ssh/id_ed25519 and ~/.ssh/id_rsa as identity file.
 
@@ -27,17 +40,6 @@ tree ~/.ssh
 I have 2 identity file
 - id_ed25519: company github account
 - robertrino: personal github account
-
-
-List keys for ssh client
-`ssh-add -l`
-
-Add key for ssh client
-`ssh-add ~/.ssh/robertrino`
-
-Delete key for ssh client
-`ssh-add -d ~/.ssh/robertrino`
-
 
 # Todos
 - make it easier to switch ssh key for different github account.
